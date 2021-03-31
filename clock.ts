@@ -4,7 +4,7 @@
 addEventListener("fetch", (event: any) => {
   event.respondWith(
     new Response(`Now: ${new Date().toISOString()} (　´･‿･｀)`, {
-      headers: { "content-type": "text/plain" },
+      headers: { "content-type": "text/plain; charset=UTF-8" },
     }),
   );
 });
